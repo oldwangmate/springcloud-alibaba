@@ -1,0 +1,37 @@
+server:
+  port: 8091
+  tomcat:
+    max-threads: 20   #修改tomcat线程数
+spring:
+  application:
+    name: service-order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  #nacos注册中心地址
+    sentinel:
+      transport:
+        port: 9999  #跟控制台交流的端口，可以随意指定一个未使用的端口即可
+        dashboard: localhost:8080  #指定控制台的服务地址
+#     filter:
+#        enabled: false   #关闭sentinel的CommonFilter实例化
+
+
+
+service-product:  # 调用的提供者的名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  sentinel:
+    enabled: true #开启feign对sentinel的支持

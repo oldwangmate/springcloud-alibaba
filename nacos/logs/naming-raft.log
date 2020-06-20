@@ -1,0 +1,8 @@
+2020-06-21 00:40:10,328 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@shop-gateway
+
+2020-06-21 00:40:10,328 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@shop-gateway
+
+2020-06-21 00:50:32,646 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-gateway
+
+2020-06-21 00:50:32,646 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@service-gateway
+

@@ -1,0 +1,7 @@
+package com.langdang.bigdata.dao;
+
+import com.langdang.bigdata.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserDao extends JpaRepository<User,Integer> {
+}

@@ -1,0 +1,134 @@
+2020-06-21 00:10:10,625 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:20:34,154 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:20:40,169 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:34:51,878 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:35:59,364 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:36:01,703 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:36:14,371 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:36:16,708 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:40:01,810 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:40:08,829 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:40:11,329 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:43:04,449 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:43:06,362 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:43:06,810 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:43:19,457 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:43:21,369 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:43:21,815 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:43:53,000 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:44:00,055 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:44:36,074 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:46:55,169 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:46:55,169 INFO serviceName: DEFAULT_GROUP@@service-order changed, schedule push for: 192.168.0.102:62523, agent: Nacos-Java-Client:v1.1.1, key: 192.168.0.102,62523,60148481926259
+
+2020-06-21 00:46:55,169 INFO send udp packet: 192.168.0.102,62523,60148481926259
+
+2020-06-21 00:46:55,173 INFO received ack: {"type": "push-ack", "lastRefTime":"60148481926259", "data":""} from: 192.168.0.102:, cost: 62523 ms, unacked: 4, total push: 0
+
+2020-06-21 00:47:26,422 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:47:26,861 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:47:29,564 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:47:41,430 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 00:47:41,866 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:47:44,569 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:50:33,647 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 00:50:33,970 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 00:50:46,669 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 00:52:09,150 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 00:58:03,743 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 00:58:08,691 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 00:58:48,750 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 00:59:03,759 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 01:00:48,636 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 01:04:01,143 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 01:05:10,520 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 01:05:10,520 INFO serviceName: DEFAULT_GROUP@@service-gateway changed, schedule push for: 192.168.59.1:54391, agent: Nacos-Java-Client:v1.1.1, key: 192.168.59.1,54391,61243753033753
+
+2020-06-21 01:05:10,520 INFO send udp packet: 192.168.59.1,54391,61243753033753
+
+2020-06-21 01:05:10,525 INFO received ack: {"type": "push-ack", "lastRefTime":"61243753033753", "data":""} from: 192.168.59.1:, cost: 54391 ms, unacked: 5, total push: 0
+
+2020-06-21 01:05:16,636 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 01:05:16,636 INFO serviceName: DEFAULT_GROUP@@shop-gateway changed, schedule push for: 192.168.59.1:54391, agent: Nacos-Java-Client:v1.1.1, key: 192.168.59.1,54391,61249868817488
+
+2020-06-21 01:05:16,636 INFO send udp packet: 192.168.59.1,54391,61249868817488
+
+2020-06-21 01:05:16,638 INFO received ack: {"type": "push-ack", "lastRefTime":"61249868817488", "data":""} from: 192.168.59.1:, cost: 54391 ms, unacked: 2, total push: 0
+
+2020-06-21 01:05:31,644 INFO DEFAULT_GROUP@@shop-gateway is changed, add it to push queue.
+
+2020-06-21 01:05:31,644 INFO serviceName: DEFAULT_GROUP@@shop-gateway changed, schedule push for: 192.168.59.1:54391, agent: Nacos-Java-Client:v1.1.1, key: 192.168.59.1,54391,61264875462336
+
+2020-06-21 01:05:31,644 INFO send udp packet: 192.168.59.1,54391,61264875462336
+
+2020-06-21 01:05:31,646 INFO received ack: {"type": "push-ack", "lastRefTime":"61264875462336", "data":""} from: 192.168.59.1:, cost: 54391 ms, unacked: 2, total push: 0
+
+2020-06-21 01:08:50,627 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 01:08:50,627 INFO serviceName: DEFAULT_GROUP@@service-product changed, schedule push for: 192.168.59.1:54391, agent: Nacos-Java-Client:v1.1.1, key: 192.168.59.1,54391,61463843811514
+
+2020-06-21 01:08:50,627 INFO send udp packet: 192.168.59.1,54391,61463843811514
+
+2020-06-21 01:08:50,628 INFO serviceName: DEFAULT_GROUP@@service-product changed, schedule push for: 192.168.0.102:63916, agent: Nacos-Java-Client:v1.1.1, key: 192.168.0.102,63916,61463843811514
+
+2020-06-21 01:08:50,628 INFO send udp packet: 192.168.0.102,63916,61463843811514
+
+2020-06-21 01:08:50,634 INFO received ack: {"type": "push-ack", "lastRefTime":"61463843811514", "data":""} from: 192.168.59.1:, cost: 54391 ms, unacked: 7, total push: 1
+
+2020-06-21 01:08:50,635 INFO received ack: {"type": "push-ack", "lastRefTime":"61463843811514", "data":""} from: 192.168.0.102:, cost: 63916 ms, unacked: 7, total push: 0
+
+2020-06-21 01:11:39,865 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 01:11:43,905 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 01:11:44,866 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 01:11:47,163 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
+2020-06-21 01:11:54,872 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 01:11:58,911 INFO DEFAULT_GROUP@@service-gateway is changed, add it to push queue.
+
+2020-06-21 01:11:59,872 INFO DEFAULT_GROUP@@service-product is changed, add it to push queue.
+
+2020-06-21 01:12:02,168 INFO DEFAULT_GROUP@@service-order is changed, add it to push queue.
+
