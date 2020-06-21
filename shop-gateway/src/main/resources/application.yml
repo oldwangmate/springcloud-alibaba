@@ -1,14 +1,39 @@
 server:
   port: 7000
-
 spring:
   application:
-    name: service-gateway
+    name: shop-gateway
   cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848  #nacos中心地址
     gateway:
+      routes:    #路由数组[路由 就是指定当请求满足什么条件的时候转到哪个微服务]
+         # product-server
+        - id: product_route   #当前路由的标识, 要求唯一,默认是UUID
+#          uri: http://localhost:8081  # 请求要转发到的地址
+          uri: lb://service-product  # lb指的是从nacos中按照名称获取微服务,并遵循负载均 衡策略
+          order: 1  # 路由的优先级,数字越小级别越高
+          predicates: # 断言(就是路由转发要满足的条件)
+            - Path=/product-server/** # 当请求路径满足Path指定的规则时,才进行路由转发
+            - Before=2020-11-28T00:00:00.000+08:00 #限制请求时间在2019-11-28之前
+            - Method=GET #限制请求方式为GET
+            - Age=18,60 #仅仅让16到60之间的人访问   自定义断言
+          filters: # 过滤器,请求在传递过程中可以通过过滤器对其进行一定的修改
+            - StripPrefix=1 # 转发之前去掉1层路径
+            - SetStatus=200 # 修改返回状态
+            - Log=true,false # 控制日志是否开启  自定义过滤器
+
+           # order-server
+        - id: order_route   #当前路由的标识, 要求唯一,默认是UUID
+#          uri: http://localhost:8091  # 请求要转发到的地址
+          uri: lb://service-order  # lb指的是从nacos中按照名称获取微服务,并遵循负载均 衡策略
+          order: 1  # 路由的优先级,数字越小级别越高
+          predicates: # 断言(就是路由转发要满足的条件)
+            - Path=/order-server/** # 当请求路径满足Path指定的规则时,才进行路由转发
+          filters: # 过滤器,请求在传递过程中可以通过过滤器对其进行一定的修改
+            - StripPrefix=1  # 转发之前去掉1层路径
+
       discovery:
         locator:
-          enabled: true   # 让gateway可以发现nacos中的微服务
+          enabled: true  #让gateway可以发现nacos中的微服务
+    nacos:
+      discovery:
+        server-addr: localhost:8848

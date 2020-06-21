@@ -23,4 +23,24 @@ public class ProductController {
         log.info("商品查询成功，内容为{}",JSON.toJSONString(product));
         return product;
     }
+
+    @RequestMapping("/product/api1/demo1")
+    public String demo1(){
+        return "/api1/demo1";
+    }
+
+    @RequestMapping("/product/api2/demo1")
+    public String demo2(){
+        return "/api2/demo1";
+    }
+
+    @RequestMapping("/product/api2/demo2")
+    public String demo3(){
+        return "/api2/demo2";
+    }
+
+    @RequestMapping("/product/api2/demo3")
+    public String demo4(){
+        return "/api2/demo3";
+    }
 }
