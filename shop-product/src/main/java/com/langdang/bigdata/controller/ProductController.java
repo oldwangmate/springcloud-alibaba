@@ -17,8 +17,9 @@ public class ProductController {
     private ProductServices productServices;
     //商品信息查询
     @RequestMapping("/product/{pid}")
-    public Product product(@PathVariable("pid") Integer pid){
+    public Product product(@PathVariable("pid") Integer pid) throws InterruptedException {
         log.info("接下来要进行{}号商品查询",pid);
+//        Thread.sleep(4000);
         Product product = productServices.findByPid(pid);
         log.info("商品查询成功，内容为{}",JSON.toJSONString(product));
         return product;

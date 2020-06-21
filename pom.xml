@@ -56,10 +56,12 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--链路追踪 Sleuth-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
+        <!--zipkin 可视化界面-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>

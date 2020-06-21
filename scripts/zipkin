@@ -1,0 +1,8 @@
+java -jar zipkin-server-2.12.9-exec.jar  默认端口9411  缓存保存
+
+持久化保存 MySQL
+java -jar zipkin-server-2.12.9-exec.jar  --STORAGE_TYPE=mysql  --MYSQL_HOST=127.0.0.1  --MYSQL_TCP_PORT=3306  --MYSQL_DB=zipkin  --MYSQL_USER=root  --MYSQL_PASS=root
+
+
+持久化 elasticsearch
+java -jar zipkin-server-2.12.9-exec.jar --STORAGE_TYPE=elasticsearch --ES- HOST=localhost:9200
